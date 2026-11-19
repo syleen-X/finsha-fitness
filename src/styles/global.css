@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Dark Neumorphism — Option A */
+  --bg: #0F2027;
+  --bg-gradient: linear-gradient(160deg, #0F2027 0%, #203A43 100%);
+  --bg-card: #1A3240;
+  --bg-nav: #0A1A22;
+  --primary: #E76F51;
+  --primary-dark: #c9593d;
+  --primary-glow: rgba(231,111,81,0.25);
+  --dark: #264653;
+  --accent: #2A9D8F;
+  --accent-dark: #21796d;
+  --accent-glow: rgba(42,157,143,0.25);
+  --text: #F4EDE4;
+  --text-muted: #8aaabb;
+  --text-dim: #5a8090;
+  --shadow-light: rgba(255,255,255,0.045);
+  --shadow-dark: rgba(0,0,0,0.55);
+  --neu-shadow: 6px 6px 18px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
+  --neu-shadow-sm: 3px 3px 9px var(--shadow-dark), -3px -3px 7px var(--shadow-light);
+  --neu-inset: inset 4px 4px 10px var(--shadow-dark), inset -4px -4px 10px var(--shadow-light);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-pill: 50px;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --transition: 0.25s ease;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 { font-family: var(--font-heading); font-weight: 700; color: var(--text); }
+
+a { color: inherit; text-decoration: none; }
+
+button { cursor: pointer; font-family: var(--font-body); border: none; outline: none; }
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+img { max-width: 100%; display: block; }
+
+/* Liquid Chrome Text — pops on dark background */
+.liquid-chrome {
+  background: linear-gradient(135deg, #F4EDE4 0%, #E76F51 45%, #2A9D8F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 18px rgba(231,111,81,0.35));
+}
+
+/* Neumorphic base — dark variant */
+.neu-card {
+  background: var(--bg-card);
+  box-shadow: var(--neu-shadow);
+  border-radius: var(--radius);
+}
+
+/* Primary button */
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transition);
+  box-shadow: 3px 3px 8px rgba(231,111,81,0.4), -1px -1px 4px rgba(255,255,255,0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+/* Accent button */
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transition);
+  box-shadow: 3px 3px 8px rgba(42,157,143,0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.btn-accent:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+/* Ghost button */
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+  transition: all var(--transition);
+  box-shadow: var(--neu-shadow-sm);
+}
+.btn-ghost:hover { box-shadow: var(--neu-inset); color: var(--primary); }
+
+/* Neumorphic input — dark variant */
+.neu-input {
+  background: var(--bg);
+  box-shadow: var(--neu-inset);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  color: var(--text);
+  width: 100%;
+  transition: all var(--transition);
+}
+.neu-input:focus { outline: 2px solid var(--primary); outline-offset: 0; border-color: var(--primary); }
+.neu-input::placeholder { color: var(--text-dim); }
+
+/* Utility */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }

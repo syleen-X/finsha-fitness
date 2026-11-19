@@ -1,0 +1,30 @@
+.page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  box-shadow: var(--neu-shadow);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.icon { font-size: 3.5rem; line-height: 1; }
+
+.title { font-size: 1.75rem; color: var(--text); }
+
+.message { color: var(--text-muted); font-size: 1rem; line-height: 1.5; }
+
+.homeBtn { margin-top: 0.5rem; }
