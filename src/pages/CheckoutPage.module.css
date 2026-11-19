@@ -1,0 +1,283 @@
+.page {
+  min-height: calc(100vh - 64px);
+  padding: 2rem 1.5rem 4rem;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+  color: var(--text);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.required {
+  color: var(--primary);
+  margin-left: 0.1rem;
+}
+
+.optional {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-left: 0.3rem;
+}
+
+.hint {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-top: -0.1rem;
+}
+
+.inputError {
+  outline: 2px solid #e57373 !important;
+  outline-offset: 0;
+}
+
+.fieldError {
+  color: #e57373;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-size: 0.9rem;
+}
+
+/* Radio */
+.radioGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.radioLabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radioCard {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  user-select: none;
+  background: var(--bg-card);
+  box-shadow: var(--neu-shadow-sm);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.radio:checked + .radioCard {
+  box-shadow: var(--neu-inset);
+  color: var(--primary);
+  font-weight: 700;
+  border-color: rgba(231,111,81,0.2);
+}
+
+.r3Tag {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.submitBtn {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* Aside */
+.aside {
+  position: sticky;
+  top: 90px;
+}
+
+.asideCard {
+  background: var(--bg-card);
+  box-shadow: var(--neu-shadow);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.asideTitle {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.asideRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  gap: 0.5rem;
+}
+
+.asideLabel { flex: 1; }
+
+.asideDivider {
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+}
+
+.asideTotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.asideTotalValue {
+  color: var(--primary);
+  font-family: var(--font-heading);
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+/* Review card */
+.reviewCard {
+  background: var(--bg-card);
+  box-shadow: var(--neu-shadow);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 650px;
+}
+
+.reviewHeading {
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.reviewField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.reviewLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reviewValue {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.reviewDivider {
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+}
+
+.reviewSubheading {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.reviewItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.3rem 0;
+}
+
+.reviewTotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.reviewTotalValue {
+  color: var(--primary);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.reviewActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .aside {
+    position: static;
+    order: -1;
+  }
+  .reviewGrid {
+    grid-template-columns: 1fr;
+  }
+}
