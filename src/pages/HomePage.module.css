@@ -1,0 +1,228 @@
+.page {
+  min-height: calc(100vh - 64px);
+}
+
+/* Hero */
+.hero {
+  padding: 6rem 1.5rem 5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroBgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+  filter: brightness(0.35) saturate(0.8);
+}
+
+.heroBgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 26, 34, 0.5) 0%,
+    rgba(15, 32, 39, 0.75) 50%,
+    rgba(15, 32, 39, 0.95) 100%
+  );
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(42,157,143,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroInner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}.heroBadge {
+  display: inline-block;
+  background: var(--bg-card);
+  box-shadow: var(--neu-shadow-sm);
+  border-radius: var(--radius-pill);
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  border: 1px solid rgba(231,111,81,0.15);
+}
+
+.heroHeading {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.heroSubtext {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* Stats */
+.statsStrip {
+  padding: 2rem 1.5rem;
+  background: var(--bg);
+}
+
+.statsInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.statCard {
+  background: var(--bg-card);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: var(--neu-shadow);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--primary);
+  text-shadow: 0 0 20px var(--primary-glow);
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Sections */
+.section, .whySection {
+  padding: 3rem 1.5rem 4rem;
+}
+
+.whySection {
+  background: linear-gradient(180deg, transparent, rgba(42,157,143,0.04));
+}
+
+.sectionInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.sectionSub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background: var(--bg-card);
+  box-shadow: var(--neu-shadow);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 24px rgba(0,0,0,0.6), -4px -4px 12px rgba(255,255,255,0.05);
+}
+
+.featureIcon {
+  font-size: 2.2rem;
+}
+
+.featureTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.featureDesc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .statsInner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroHeading {
+    font-size: 2.2rem;
+  }
+  .statsInner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
