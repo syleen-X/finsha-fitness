@@ -16,7 +16,7 @@
 | **Domain** | Fitness & Training (Studio Class Booking) |
 | **Repository Link** | [https://github.com/syleen-X/finsha-fitness](https://github.com/syleen-X/finsha-fitness) |
 | **Deployment Link** | [https://finsha-fitness.vercel.app](https://finsha-fitness.vercel.app) |
-| **Final Commit Hash** | `a3bab336e97bdd5ec4a520e462c6bdb688dfe785` |
+| **Final Commit Hash** | `ee63f3e4cf3da71d13da9e054ebb6910bfcc17d0` |
 
 ---
 
