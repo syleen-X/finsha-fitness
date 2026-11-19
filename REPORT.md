@@ -14,9 +14,9 @@
 | **Institution** | FAST-NUCES Islamabad Campus |
 | **Business Name** | Finsha Fitness & Training |
 | **Domain** | Fitness & Training (Studio Class Booking) |
-| **Repository Link** | *(Insert Public GitHub Repository URL)* |
-| **Deployment Link** | *(Insert Public Deployed URL e.g. Vercel/Netlify)* |
-| **Final Commit Hash** | *(Insert Commit SHA from git rev-parse HEAD)* |
+| **Repository Link** | [https://github.com/syleen-X/finsha-fitness](https://github.com/syleen-X/finsha-fitness) |
+| **Deployment Link** | [https://finsha-fitness.vercel.app](https://finsha-fitness.vercel.app) |
+| **Final Commit Hash** | `a3bab336e97bdd5ec4a520e462c6bdb688dfe785` |
 
 ---
 
