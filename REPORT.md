@@ -16,7 +16,7 @@
 | **Domain** | Fitness & Training (Studio Class Booking) |
 | **Repository Link** | [https://github.com/syleen-X/finsha-fitness](https://github.com/syleen-X/finsha-fitness) |
 | **Deployment Link** | [https://finsha-fitness.vercel.app](https://finsha-fitness.vercel.app) |
-| **Final Commit Hash** | `ee63f3e4cf3da71d13da9e054ebb6910bfcc17d0` |
+| **Final Commit Hash** | Refer to Git commit history on GitHub (Milestone 5: `a3bab33`) |
 
 ---
 
@@ -121,7 +121,15 @@
 6. **Confirmation (`/confirmation`):** Success confirmation with generated reference code (`FF-XXXXXX`), full session summary, total paid, and automated storage cleanup.
 7. **404 Not Found (`*`):** Friendly fallback card with one-click return to home.
 
-*(Insert application screenshots here in final PDF)*
+![Home Page & Hero Banner](report_screens/home.png){ width=90% }
+
+![Classes Catalogue, Live Search & Category Filters](report_screens/classes.png){ width=90% }
+
+![Class Detail View with Spot Availability & Capacity Validation](report_screens/detail.png){ width=90% }
+
+![Booking Bag Management & Order Summary](report_screens/booking.png){ width=90% }
+
+![Checkout Form with Field Validation](report_screens/checkout.png){ width=90% }
 
 ---
 

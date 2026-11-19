@@ -33,7 +33,7 @@ No third-party UI component libraries (MUI, Chakra, shadcn/ui) are used. All sty
 
 - **GitHub Repository:** [https://github.com/syleen-X/finsha-fitness](https://github.com/syleen-X/finsha-fitness)
 - **Live Deployment:** [https://finsha-fitness.vercel.app](https://finsha-fitness.vercel.app)
-- **Final Commit Hash:** `a3bab33` (`a3bab336e97bdd5ec4a520e462c6bdb688dfe785`)
+- **Final Commit Hash:** Refer to Git commit history on GitHub (Milestone 5: `a3bab33`)
 
 ---
 
